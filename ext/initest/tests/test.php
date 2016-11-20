@@ -1,0 +1,4 @@
+<?php
+
+ini_echo();
+

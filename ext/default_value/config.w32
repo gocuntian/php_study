@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("default_value", "for default_value support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("default_value", "enable default_value support", "no");
+
+if (PHP_DEFAULT_VALUE != "no") {
+	EXTENSION("default_value", "default_value.c", PHP_EXTNAME_SHARED, "/DZEND_ENABLE_STATIC_TSRMLS_CACHE=1");
+}
+
